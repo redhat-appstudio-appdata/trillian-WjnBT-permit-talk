@@ -1,0 +1,23 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: redis
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: redis
+    app.kubernetes.io/part-of: trillian
+  name: redisyplf
+spec:
+  path: /
+  port:
+    targetPort: 6379
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: redis
+    weight: null
+status: {}

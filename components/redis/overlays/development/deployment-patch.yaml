@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: redis
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/rhtas-tenant/trillian/redis@sha256:9e85a718dba47a1046dddb910b9fb6843de7216159dd56d6f6d09ab785f9f4bd
+        name: my-go
+        resources: {}
+status: {}
