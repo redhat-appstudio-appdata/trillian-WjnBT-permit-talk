@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: logsigner
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/rhtas-tenant/trillian/logsigner@sha256:6d3726d96ec770430214e63c77a341fffdc3f9678068acea13e32c8130a5ed13
+        name: my-go
+        resources: {}
+status: {}
