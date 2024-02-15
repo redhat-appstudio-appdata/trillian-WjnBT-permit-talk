@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: database
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/rhtas-tenant/trillian/database@sha256:84cbd1fc3913d90192c303b491cfe1a4031f8b5c088114041867504c5a51ceb8
+        name: my-go
+        resources: {}
+status: {}
