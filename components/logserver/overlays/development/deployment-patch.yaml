@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: logserver
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/rhtas-tenant/trillian/logserver@sha256:cf90c3f00e88f531c6f78a4ddb09f52053eda8a06b4495424118ea0053694448
+        name: my-go
+        resources: {}
+status: {}
