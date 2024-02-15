@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: netcat
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/rhtas-tenant/trillian/netcat@sha256:05825c88f52bc4da36663ceccd62af790e3a0b74b40752b703864f8d4d2e1380
+        name: my-go
+        resources: {}
+status: {}
