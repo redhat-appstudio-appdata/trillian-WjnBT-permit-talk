@@ -8,7 +8,7 @@ metadata:
     app.kubernetes.io/managed-by: kustomize
     app.kubernetes.io/name: logsigner
     app.kubernetes.io/part-of: trillian
-  name: logsignerjcik
+  name: logsignerxqxg
 spec:
   path: /
   port:
