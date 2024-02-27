@@ -8,7 +8,7 @@ metadata:
     app.kubernetes.io/managed-by: kustomize
     app.kubernetes.io/name: redis
     app.kubernetes.io/part-of: trillian
-  name: redisw5oe
+  name: redisfe7d
 spec:
   path: /
   port:
