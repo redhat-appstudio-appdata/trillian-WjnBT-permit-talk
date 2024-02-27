@@ -8,7 +8,7 @@ metadata:
     app.kubernetes.io/managed-by: kustomize
     app.kubernetes.io/name: logserver
     app.kubernetes.io/part-of: trillian
-  name: logserverzhw2
+  name: logserverj3km
 spec:
   path: /
   port:
