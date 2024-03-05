@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: database
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/rhtas-tenant/trillian/database@sha256:d2204ea5a7e58c83e234e3d41c88efdf023a692400c718ae3d4e7f3be7faac00
+      - image: quay.io/redhat-user-workloads/rhtas-tenant/trillian/database@sha256:67e51ff1536b21559b82562eb0181ee4b98a148832c4203d73055d62d67b684f
         name: my-go
         ports:
         - containerPort: 8081
