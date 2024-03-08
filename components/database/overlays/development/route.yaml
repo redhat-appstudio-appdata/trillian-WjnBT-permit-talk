@@ -8,7 +8,7 @@ metadata:
     app.kubernetes.io/managed-by: kustomize
     app.kubernetes.io/name: database
     app.kubernetes.io/part-of: trillian
-  name: databaseehc0
+  name: databasew23u
 spec:
   path: /
   port:
