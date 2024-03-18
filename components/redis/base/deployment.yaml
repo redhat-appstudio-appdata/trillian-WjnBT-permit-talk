@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: redis
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/rhtas-tenant/trillian/redis@sha256:0804a6634b8836cb2e957ee16d54e8d6ab94d311362a48baf238b1f575d79934
+      - image: quay.io/redhat-user-workloads/rhtas-tenant/trillian/redis@sha256:8c12d98f96ed3daa3ea7ce03d52e8b6748c4b7ab20eee98c1d1ad031d14af00e
         name: my-go
         ports:
         - containerPort: 8081
