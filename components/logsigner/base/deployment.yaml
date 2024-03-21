@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: logsigner
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/rhtas-tenant/trillian/logsigner@sha256:aa7812254a582c12bf71834f1617a81f76d00a5ee90413d7d707ed5068e21220
+      - image: quay.io/redhat-user-workloads/rhtas-tenant/trillian/logsigner@sha256:7e00607e927372da3e60f9e67ad4e0325e9e5afcf6b6895e979928f056a2ae1b
         name: my-go
         ports:
         - containerPort: 8081
